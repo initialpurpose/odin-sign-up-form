@@ -15,6 +15,12 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  background: oklch(0.9846 0.0017 247.84);
+
+  display: flex;
+}
+
 .logo-column {
   background: white url("../img/background.jpg") center;
   background-size: cover;
@@ -37,4 +43,34 @@ body {
   height: 120px;
   width: 100%;
   margin-top: 25vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+}
+
+main h1 {
+  font-size: 24px;
+}
+
+.top {
+  padding: 0 20vh 50px 5vh;
+}
+
+.sign-up-form {
+  display: flex;
+  background: oklch(1 0 0);
+  box-shadow: 5px 5px 5px 0 oklch(0 0 0 / 20%);
+  padding-left: 5vh;
+}
+
+.sign-up-form h1 {
+  font-size: 16px;
+}
+
+.bottom {
+  padding: 5vh 0 0 5vh;
 }
