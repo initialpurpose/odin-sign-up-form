@@ -72,5 +72,41 @@ main h1 {
 }
 
 .bottom {
+  display: flex;
+  flex-direction: column;
   padding: 5vh 0 0 5vh;
+}
+
+.create-acc-btn {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 oklch(0 0 0 / 10%);
+  padding: 20px 30px;
+  max-width: 250px;
+
+  background: oklch(0.5081 0.061 131.35);
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+  cursor: pointer;
+}
+
+.create-acc-btn:hover {
+  background: oklch(0.595 0.061 131.35);
+}
+
+.create-acc-btn:active {
+  background: oklch(0.411 0.061 131.35);
+}
+
+.login-text {
+  margin: 32px 0;
+}
+
+.login-text a {
+  font-weight: bold;
+  color: oklch(0.5081 0.061 131.35);
+  text-decoration: none;
 }
