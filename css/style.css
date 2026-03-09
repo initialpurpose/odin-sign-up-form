@@ -1,16 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-  font-family: 'norsebold';
-  src: url('fonts/norsebold-webfont.woff2') format('woff2'),
-  url('fonts/norsebold-webfont.woff') format('woff');
+  font-family: 'Norse';
+  src: url('../fonts/norsebold-webfont.woff2') format('woff2'),
+  url('../fonts/norsebold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-html {
+body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.logo-column {
+  background: white url("../img/background.jpg") center;
+  background-size: cover;
+
+  display: flex;
+  width: 40vw;
+  height: 100vh;
+}
+
+.logo-container {
+  background: oklch(0 0 0 / 70%);
+
+  font-family: "Norse", Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  margin-top: 25vh;
 }
