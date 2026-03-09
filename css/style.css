@@ -93,6 +93,7 @@ main h1 {
 
 .form-field label {
   margin-bottom: 6px;
+
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -101,8 +102,20 @@ main h1 {
 
 .form-field input {
   padding: 10px;
-  border: 1px solid oklch(0.85 0 0);
+  border: 2px solid oklch(0.85 0 0);
   border-radius: 6px;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: oklch(0.5232 0.1967 265.02);
+  box-shadow: 0 5px 5px 0 oklch(0 0 0 / 10%);
+}
+
+.form-field input:invalid {
+  outline: none;
+  border-color: oklch(0.5457 0.174 25.04);
+  box-shadow: 0 5px 5px 0 oklch(0 0 0 / 10%);
 }
 
 .bottom {
